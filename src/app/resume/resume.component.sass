@@ -1,0 +1,64 @@
+@import '../../styles/sass/colors'
+
+.resume
+  background-color: $trans-white
+  &:before
+    content: ""
+    background: url('../../assets/images/3132.jpg') no-repeat
+    background-size: cover
+    opacity: 0.5
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    position: fixed
+    z-index: -1
+
+  .image_wrapper
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    height: 150px
+    width: 150px
+    float: right
+
+    .profile_image
+      content: ""
+      background: url('../../assets/images/IMG_1183.JPG') no-repeat
+      background-size: cover
+
+  .resume_header
+    margin: 25px 0px
+    font-size: 13px
+    font-weight: 700
+
+    i
+      color: $blue
+
+  .resume_body
+    margin: 25px 0
+
+    .experience_details
+      font-size: 13px
+
+    .experience_description
+      font-size: 14px
+
+  .resume_tech,
+  .experience_description
+    width: 90%
+
+  .find_online
+    i
+      font-size: 26px
+      color: $blue
+      margin: 8px
+      position: absolute
+
+    em, b, span
+      margin-left: 55px
+
+    span
+      display: block
+      width: 80%
+      font-size: 14px
