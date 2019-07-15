@@ -56,10 +56,11 @@ button
   position: absolute
   margin: 0 auto
   text-align: center
-  top: 35%
+  top: 30%
   width: 100%
   h1
     font-size: 6rem
+    text-shadow: -4px -2px 4px #008CFF
   h4
     font-size: 3rem
   p
@@ -89,12 +90,30 @@ sup
   border-radius: 40px
   border: 2px solid #008CFF
   background: transparent
+  font-size: 12px
   &:hover
     background: white
     a
-      color: rgba(0,0,0,0.8)
+      color: rgba(0,0,0,0.6)
       text-decoration: none
   a
     color: white
 
+.onetwenty
+  position: absolute
+  width: 100%
+  overflow-y: auto
+  top: 0
+  background: repeating-linear-gradient(45deg, rgba(171, 168, 188, 0.13), rgba(171, 161, 188, 0.13) 10px, rgba(125, 125, 152, 0.15) 10px, rgba(130, 130, 152, 0.13) 20px)
+  .resume
+    background: white
 
+// small
+@media only screen and (max-width: 600px)
+  .hero_content
+    top: 25%
+
+// big
+@media only screen and (min-width: 600px)
+  .hero_content
+    top: 35%
